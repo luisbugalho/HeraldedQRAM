@@ -1,0 +1,22 @@
+python3 qRAM_twostep.py  2 4
+wait
+python3 qRAM_twostep.py  3 4
+wait
+python3 qRAM_twostep.py  4 4
+wait
+python3 qRAM_twostep.py  5 4
+wait
+python3 qRAM_twostep.py  6 4
+wait
+python3 qRAM_twostep.py  7 4
+wait
+python3 qRAM_twostep.py  8 4
+wait
+python3 qRAM_twostep.py  9 4
+wait
+python3 qRAM_twostep.py  10 4
+wait
+python3 qRAM_twostep.py  11 4
+wait
+python3 qRAM_twostep.py  12 4
+wait

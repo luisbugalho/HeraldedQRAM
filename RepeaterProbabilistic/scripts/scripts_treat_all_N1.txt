@@ -1,0 +1,40 @@
+source scripts/scripts_treat_N1_2_P2_0.txt
+wait
+source scripts/scripts_treat_N1_2_P2_1.txt
+wait
+source scripts/scripts_treat_N1_2_P2_2.txt
+wait
+source scripts/scripts_treat_N1_2_P2_3.txt
+wait
+source scripts/scripts_treat_N1_2_P2_4.txt
+wait
+source scripts/scripts_treat_N1_3_P2_0.txt
+wait
+source scripts/scripts_treat_N1_3_P2_1.txt
+wait
+source scripts/scripts_treat_N1_3_P2_2.txt
+wait
+source scripts/scripts_treat_N1_3_P2_3.txt
+wait
+source scripts/scripts_treat_N1_3_P2_4.txt
+wait
+source scripts/scripts_treat_N1_4_P2_0.txt
+wait
+source scripts/scripts_treat_N1_4_P2_1.txt
+wait
+source scripts/scripts_treat_N1_4_P2_2.txt
+wait
+source scripts/scripts_treat_N1_4_P2_3.txt
+wait
+source scripts/scripts_treat_N1_4_P2_4.txt
+wait
+source scripts/scripts_treat_N1_5_P2_0.txt
+wait
+source scripts/scripts_treat_N1_5_P2_1.txt
+wait
+source scripts/scripts_treat_N1_5_P2_2.txt
+wait
+source scripts/scripts_treat_N1_5_P2_3.txt
+wait
+source scripts/scripts_treat_N1_5_P2_4.txt
+wait

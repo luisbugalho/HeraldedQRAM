@@ -1,0 +1,40 @@
+source scripts/scripts_run_5_0.txt
+wait
+source scripts/scripts_run_5_1.txt
+wait
+source scripts/scripts_run_5_2.txt
+wait
+source scripts/scripts_run_5_3.txt
+wait
+source scripts/scripts_run_5_4.txt
+wait
+source scripts/scripts_run_4_0.txt
+wait
+source scripts/scripts_run_4_1.txt
+wait
+source scripts/scripts_run_4_2.txt
+wait
+source scripts/scripts_run_4_3.txt
+wait
+source scripts/scripts_run_4_4.txt
+wait
+source scripts/scripts_run_3_0.txt
+wait
+source scripts/scripts_run_3_1.txt
+wait
+source scripts/scripts_run_3_2.txt
+wait
+source scripts/scripts_run_3_3.txt
+wait
+source scripts/scripts_run_3_4.txt
+wait
+source scripts/scripts_run_2_0.txt
+wait
+source scripts/scripts_run_2_1.txt
+wait
+source scripts/scripts_run_2_2.txt
+wait
+source scripts/scripts_run_2_3.txt
+wait
+source scripts/scripts_run_2_4.txt
+wait

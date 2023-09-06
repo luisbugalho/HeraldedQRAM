@@ -1,0 +1,60 @@
+source scripts/scripts_treat_P1_1.0_P2_0.txt
+wait
+source scripts/scripts_treat_P1_1.0_P2_1.txt
+wait
+source scripts/scripts_treat_P1_1.0_P2_2.txt
+wait
+source scripts/scripts_treat_P1_1.0_P2_3.txt
+wait
+source scripts/scripts_treat_P1_1.0_P2_4.txt
+wait
+source scripts/scripts_treat_P1_0.9_P2_0.txt
+wait
+source scripts/scripts_treat_P1_0.9_P2_1.txt
+wait
+source scripts/scripts_treat_P1_0.9_P2_2.txt
+wait
+source scripts/scripts_treat_P1_0.9_P2_3.txt
+wait
+source scripts/scripts_treat_P1_0.9_P2_4.txt
+wait
+source scripts/scripts_treat_P1_0.8_P2_0.txt
+wait
+source scripts/scripts_treat_P1_0.8_P2_1.txt
+wait
+source scripts/scripts_treat_P1_0.8_P2_2.txt
+wait
+source scripts/scripts_treat_P1_0.8_P2_3.txt
+wait
+source scripts/scripts_treat_P1_0.8_P2_4.txt
+wait
+source scripts/scripts_treat_P1_0.7_P2_0.txt
+wait
+source scripts/scripts_treat_P1_0.7_P2_1.txt
+wait
+source scripts/scripts_treat_P1_0.7_P2_2.txt
+wait
+source scripts/scripts_treat_P1_0.7_P2_3.txt
+wait
+source scripts/scripts_treat_P1_0.7_P2_4.txt
+wait
+source scripts/scripts_treat_P1_0.6_P2_0.txt
+wait
+source scripts/scripts_treat_P1_0.6_P2_1.txt
+wait
+source scripts/scripts_treat_P1_0.6_P2_2.txt
+wait
+source scripts/scripts_treat_P1_0.6_P2_3.txt
+wait
+source scripts/scripts_treat_P1_0.6_P2_4.txt
+wait
+source scripts/scripts_treat_P1_0.5_P2_0.txt
+wait
+source scripts/scripts_treat_P1_0.5_P2_1.txt
+wait
+source scripts/scripts_treat_P1_0.5_P2_2.txt
+wait
+source scripts/scripts_treat_P1_0.5_P2_3.txt
+wait
+source scripts/scripts_treat_P1_0.5_P2_4.txt
+wait

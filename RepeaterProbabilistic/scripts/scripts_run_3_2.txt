@@ -1,0 +1,18 @@
+python3 qRAM_repeater_smart.py 2 3 2
+wait
+python3 qRAM_repeater_smart.py 3 3 2
+wait
+python3 qRAM_repeater_smart.py 4 3 2
+wait
+python3 qRAM_repeater_smart.py 5 3 2
+wait
+python3 qRAM_repeater_smart.py 6 3 2
+wait
+python3 qRAM_repeater_smart.py 7 3 2
+wait
+python3 qRAM_repeater_smart.py 8 3 2
+wait
+python3 qRAM_repeater_smart.py 9 3 2
+wait
+python3 qRAM_repeater_smart.py 10 3 2
+wait

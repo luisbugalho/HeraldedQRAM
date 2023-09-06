@@ -1,0 +1,30 @@
+
+### argv1 - Flag Layers
+### argv2 - which plots we want
+### argv3 - which combinations of T1 we want
+### argv4 - which combinations of T2 we want
+### argv5 - which combinations of CNOT errors we want
+### argv6 - scaling on the y axis
+### argv7 - name of the plot
+### argv8 - save name for the file
+### argv9 - Flag print efficiency
+### argv10 - Flag print T1
+### argv11 - Flag Print T2
+### argv12 -  Flag Print CNOT
+
+Figure 5 - Layer scaling of fidelity
+
+python3 readData/plotFile.py True 1,2,3,4,0 1 1 0 logit None QRAM_layers True False False False
+
+Figure 6 - Query times for Two-step scheme
+
+python3 readData/plot_times.py True log Query_times_twostep
+
+Figure 7 - Dephasing + Damping Errors
+
+python3 readData/plotFile.py False 1,2,3,4,0 3 1,2 0 logit None Dephasing_Damping True False False False Compare 1,3,0,0
+
+Figure 8 - Dephasing + Damping + CNOT errors
+
+python3 readData/plotFile.py False 0 2 3 1,2,3,4,0 linear None Dephasing_Damping_CNOT False False False True None
+

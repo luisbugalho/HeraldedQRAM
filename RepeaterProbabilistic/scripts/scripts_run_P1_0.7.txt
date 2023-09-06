@@ -1,0 +1,10 @@
+source scripts/scripts_run_0.7_0.txt
+wait
+source scripts/scripts_run_0.7_1.txt
+wait
+source scripts/scripts_run_0.7_2.txt
+wait
+source scripts/scripts_run_0.7_3.txt
+wait
+source scripts/scripts_run_0.7_4.txt
+wait

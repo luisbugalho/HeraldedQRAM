@@ -1,0 +1,191 @@
+PLOT TIMES
+### argv1 - which simulations we want
+### argv2 - scaling on the y axis
+### argv3 - fillin betwwen
+### argv4 - order of the plots - true means reversed
+### argv5 - Savename for file
+### argv6 - print P_d
+### argv7 - print efficiency
+
+PLOT FIDELITIES
+### argv1 - which simulations we want
+### argv2 - which combinations of T1 we want
+### argv3 - which combinations of T2 we want
+### argv4 - which combinations of CNOT errors we want
+### argv5 - scaling on the y axis
+### argv6 - name of the plot
+### argv7 - flag print Pd
+### argv8 - flag print eta
+### argv9 - Flag print T1
+### argv10 - Flag Print T2
+### argv11 -  Flag Print CNOT
+### argv12 - Savename for file
+### argv13 - compare flag
+### argv14 - compare simulation -directory
+
+Figure 12 - Baseline comparison
+
+python3 readData/plot_times.py P1_1.0_P2_0,P1_1.0_P2_5,0,5 log True False Baseline_Comparison_Times True True
+
+python3 readData/plotFile.py P1_1.0_P2_0,P1_1.0_P2_5,0,5 3 2 0 logit None True True False False False Baseline_Comparison_Fidelities False None
+
+Figure 13 - Query Times repeater
+
+CHOSEN:
+python3 readData/plot_times.py P1_0.5_P2_1,P1_0.6_P2_1,P1_0.7_P2_1,P1_0.8_P2_1,P1_0.9_P2_1,P1_1.0_P2_1 log True False Query_times_P1 True False
+python3 readData/plot_times.py N1_2_P2_1,N1_3_P2_1,N1_4_P2_1,N1_5_P2_1,N1_6_P2_1 log True False Query_times_N1 True False
+
+ALL:
+python3 readData/plot_times.py P1_0.5_P2_0,P1_0.6_P2_0,P1_0.7_P2_0,P1_0.8_P2_0,P1_0.9_P2_0,P1_1.0_P2_0 log True False Query_times_P1 True False
+
+python3 readData/plot_times.py N1_2_P2_0,N1_3_P2_0,N1_4_P2_0,N1_5_P2_0,N1_6_P2_0 log True False Query_times_N1 True False
+python3 readData/plot_times.py N1_2_P2_1,N1_3_P2_1,N1_4_P2_1,N1_5_P2_1,N1_6_P2_1 log True False Query_times_N1 True True
+python3 readData/plot_times.py N1_2_P2_2,N1_3_P2_2,N1_4_P2_2,N1_5_P2_2,N1_6_P2_2 log True False Query_times_N1 True True
+python3 readData/plot_times.py N1_2_P2_3,N1_3_P2_3,N1_4_P2_3,N1_5_P2_3,N1_6_P2_3 log True False Query_times_N1 True True
+python3 readData/plot_times.py N1_2_P2_4,N1_3_P2_4,N1_4_P2_4,N1_5_P2_4,N1_6_P2_4 log True False Query_times_N1 True True
+
+python3 readData/plot_times.py N1_2_P2_1,N1_3_P2_1,N1_4_P2_1,N1_5_P2_1,N1_6_P2_1,N1_2_P2_2,N1_3_P2_2,N1_4_P2_2,N1_5_P2_2,N1_6_P2_2,N1_2_P2_3,N1_3_P2_3,N1_4_P2_3,N1_5_P2_3,N1_6_P2_3,N1_2_P2_4,N1_3_P2_4,N1_4_P2_4,N1_5_P2_4,N1_6_P2_4 log True False Query_times_N1 True True
+
+
+python3 readData/plot_times.py N1_3_P2_1,N1_3_P2_2,N1_3_P2_3,N1_3_P2_4,N1_3_P2_0 log True False Query_times_N1_eta True True
+python3 readData/plot_times.py N1_4_P2_1,N1_4_P2_2,N1_4_P2_3,N1_4_P2_4,N1_4_P2_0 log True False Query_times_N1_eta True True
+python3 readData/plot_times.py N1_5_P2_1,N1_5_P2_2,N1_5_P2_3,N1_5_P2_4,N1_5_P2_0 log True False Query_times_N1_eta True True
+python3 readData/plot_times.py N1_6_P2_1,N1_6_P2_2,N1_6_P2_3,N1_6_P2_4,N1_6_P2_0 log True False Query_times_N1_eta True True
+
+Figure 14 - Fidelity completely probabilistic protocol repeater
+
+CHOSEN:
+python3 readData/plotFile.py P1_1.0_P2_0,P1_1.0_P2_4,P1_1.0_P2_3,P1_1.0_P2_2,P1_1.0_P2_1 3 3 0 logit None False True False False False Dephasing_Damping_Repeater False None
+
+ALL:
+python3 readData/plotFile.py P1_1.0_P2_0,P1_1.0_P2_4,P1_1.0_P2_3,P1_1.0_P2_2,P1_1.0_P2_1 3 1 0 logit None False True False False False Dephasing_Damping_Repeater False None
+python3 readData/plotFile.py P1_1.0_P2_0,P1_1.0_P2_4,P1_1.0_P2_3,P1_1.0_P2_2,P1_1.0_P2_1 3 2 0 logit None False True False False False Dephasing_Damping_Repeater False None
+python3 readData/plotFile.py P1_1.0_P2_0,P1_1.0_P2_4,P1_1.0_P2_3,P1_1.0_P2_2,P1_1.0_P2_1 3 3 0 logit None False True False False False Dephasing_Damping_Repeater False None
+
+
+Figure 14 - Fidelity hybrid protocol - some deterministic nodes
+
+python3 readData/plotFile.py N1_5_P2_1,N1_5_P2_2,N1_5_P2_3,N1_5_P2_4,N1_5_P2_0 3 3 1 linear None False True False False False Dephasing_Damping_CNOT_Repeater True 'All_Data_Processed_New/1/1_3_3_1' 'Two-step Scheme: $\eta = 0.5$'
+
+python3 readData/plotFile.py N1_5_P2_1,N1_5_P2_2,N1_5_P2_3,N1_5_P2_4,N1_5_P2_0 3 3 2 linear None False True False False False Dephasing_Damping_CNOT_Repeater2 True 'All_Data_Processed_New/1/1_3_3_2' 'Two-step Scheme: $\eta = 0.5$'
+
+python3 readData/plotFile.py N1_5_P2_1,N1_5_P2_2,N1_5_P2_3,N1_5_P2_4,N1_5_P2_0 3 3 3 logit None False True False False False Dephasing_Damping_CNOT_Repeater3 True 'All_Data_Processed_New/1/1_3_3_3' 'Two-step Scheme: $\eta = 0.5$'
+
+python3 readData/plotFile.py N1_5_P2_1,N1_5_P2_2,N1_5_P2_3,N1_5_P2_4,N1_5_P2_0 3 3 4 logit None False True False False False Dephasing_Damping_CNOT_Repeater4 True 'All_Data_Processed_New/1/1_3_3_4' 'Two-step Scheme: $\eta = 0.5$'
+
+python3 readData/plotFile.py N1_5_P2_1,N1_5_P2_2,N1_5_P2_3,N1_5_P2_4,N1_5_P2_0 3 3 5 logit None False True False False False Dephasing_Damping_CNOT_Repeater5 True 'All_Data_Processed_New/1/1_3_3_5' 'Two-step Scheme: $\eta = 0.5$'
+
+
+
+Figures Appendix:
+
+Figure 17 - Query Times Variation
+
+python3 readData/plot_times.py P1_0.5_P2_1,P1_0.6_P2_1,P1_0.7_P2_1,P1_0.8_P2_1,P1_0.9_P2_1,P1_1.0_P2_1 log True False Query_times_P1_eta_fixed True True
+python3 readData/plot_times.py P1_0.9_P2_1,P1_0.9_P2_2,P1_0.9_P2_3,P1_0.9_P2_4,P1_0.9_P2_0 log True False Query_times_P1_pd_fixed True True
+python3 readData/plot_times.py P1_1.0_P2_1,N1_6_P2_1,N1_5_P2_1,N1_4_P2_1,N1_3_P2_1,N1_2_P2_1 log True False Query_times_N1_eta_fixed True True
+python3 readData/plot_times.py N1_5_P2_1,N1_5_P2_2,N1_5_P2_3,N1_5_P2_4,N1_5_P2_0 log True False Query_times_N1_pd_fixed True True
+
+
+
+Figure 18 - Fidelities completely probabilistic:
+
+python3 readData/plotFile.py P1_1.0_P2_0,P1_1.0_P2_4,P1_1.0_P2_3,P1_1.0_P2_2,P1_1.0_P2_1 3 1 0 logit None False True False False False Dephasing_Damping_Repeater_10 False None
+python3 readData/plotFile.py P1_1.0_P2_0,P1_1.0_P2_4,P1_1.0_P2_3,P1_1.0_P2_2,P1_1.0_P2_1 3 2 0 logit None False True False False False Dephasing_Damping_Repeater_100 False None
+python3 readData/plotFile.py P1_1.0_P2_0,P1_1.0_P2_4,P1_1.0_P2_3,P1_1.0_P2_2,P1_1.0_P2_1 3 3 0 logit None False True False False False Dephasing_Damping_Repeater_1000 False None
+
+
+
+Figure 19 - Fidelities Repeater Smart scheme with CNOT error at 1%:
+
+
+python3 readData/plotFile.py N1_6_P2_1,N1_6_P2_2,N1_6_P2_3,N1_6_P2_4,N1_6_P2_0 3 1 1 linear None False True False False False CNOT1_6_10 True 'All_Data_Processed_New/1/1_3_1_1' 'Two-step Scheme: $\eta = 0.5$'
+python3 readData/plotFile.py N1_6_P2_1,N1_6_P2_2,N1_6_P2_3,N1_6_P2_4,N1_6_P2_0 3 2 1 linear None False True False False False CNOT1_6_100 True 'All_Data_Processed_New/1/1_3_2_1' 'Two-step Scheme: $\eta = 0.5$'
+python3 readData/plotFile.py N1_6_P2_1,N1_6_P2_2,N1_6_P2_3,N1_6_P2_4,N1_6_P2_0 3 3 1 linear None False True False False False CNOT1_6_1000 True 'All_Data_Processed_New/1/1_3_3_1' 'Two-step Scheme: $\eta = 0.5$'
+
+python3 readData/plotFile.py N1_5_P2_1,N1_5_P2_2,N1_5_P2_3,N1_5_P2_4,N1_5_P2_0 3 1 1 linear None False True False False False CNOT1_5_10 True 'All_Data_Processed_New/1/1_3_1_1' 'Two-step Scheme: $\eta = 0.5$'
+python3 readData/plotFile.py N1_5_P2_1,N1_5_P2_2,N1_5_P2_3,N1_5_P2_4,N1_5_P2_0 3 2 1 linear None False True False False False CNOT1_5_100 True 'All_Data_Processed_New/1/1_3_2_1' 'Two-step Scheme: $\eta = 0.5$'
+python3 readData/plotFile.py N1_5_P2_1,N1_5_P2_2,N1_5_P2_3,N1_5_P2_4,N1_5_P2_0 3 3 1 linear None False True False False False CNOT1_5_1000 True 'All_Data_Processed_New/1/1_3_3_1' 'Two-step Scheme: $\eta = 0.5$'
+
+python3 readData/plotFile.py N1_4_P2_1,N1_4_P2_2,N1_4_P2_3,N1_4_P2_4,N1_4_P2_0 3 1 1 linear None False True False False False CNOT1_4_10 True 'All_Data_Processed_New/1/1_3_1_1' 'Two-step Scheme: $\eta = 0.5$'
+python3 readData/plotFile.py N1_4_P2_1,N1_4_P2_2,N1_4_P2_3,N1_4_P2_4,N1_4_P2_0 3 2 1 linear None False True False False False CNOT1_4_100 True 'All_Data_Processed_New/1/1_3_2_1' 'Two-step Scheme: $\eta = 0.5$'
+python3 readData/plotFile.py N1_4_P2_1,N1_4_P2_2,N1_4_P2_3,N1_4_P2_4,N1_4_P2_0 3 3 1 linear None False True False False False CNOT1_4_1000 True 'All_Data_Processed_New/1/1_3_3_1' 'Two-step Scheme: $\eta = 0.5$'
+
+python3 readData/plotFile.py N1_3_P2_1,N1_3_P2_2,N1_3_P2_3,N1_3_P2_4,N1_3_P2_0 3 1 1 linear None False True False False False CNOT1_3_10 True 'All_Data_Processed_New/1/1_3_1_1' 'Two-step Scheme: $\eta = 0.5$'
+python3 readData/plotFile.py N1_3_P2_1,N1_3_P2_2,N1_3_P2_3,N1_3_P2_4,N1_3_P2_0 3 2 1 linear None False True False False False CNOT1_3_100 True 'All_Data_Processed_New/1/1_3_2_1' 'Two-step Scheme: $\eta = 0.5$'
+python3 readData/plotFile.py N1_3_P2_1,N1_3_P2_2,N1_3_P2_3,N1_3_P2_4,N1_3_P2_0 3 3 1 linear None False True False False False CNOT1_3_1000 True 'All_Data_Processed_New/1/1_3_3_1' 'Two-step Scheme: $\eta = 0.5$'
+
+
+
+Figure 20 - Fidelities Repeater Smart scheme with CNOT error at 0.1%:
+
+python3 readData/plotFile.py N1_6_P2_1,N1_6_P2_2,N1_6_P2_3,N1_6_P2_4,N1_6_P2_0 3 1 2 linear None False True False False False CNOT2_6_10 True 'All_Data_Processed_New/1/1_3_1_2' 'Two-step Scheme: $\eta = 0.5$'
+python3 readData/plotFile.py N1_6_P2_1,N1_6_P2_2,N1_6_P2_3,N1_6_P2_4,N1_6_P2_0 3 2 2 linear None False True False False False CNOT2_6_100 True 'All_Data_Processed_New/1/1_3_2_2' 'Two-step Scheme: $\eta = 0.5$'
+python3 readData/plotFile.py N1_6_P2_1,N1_6_P2_2,N1_6_P2_3,N1_6_P2_4,N1_6_P2_0 3 3 2 linear None False True False False False CNOT2_6_1000 True 'All_Data_Processed_New/1/1_3_3_2' 'Two-step Scheme: $\eta = 0.5$'
+
+python3 readData/plotFile.py N1_5_P2_1,N1_5_P2_2,N1_5_P2_3,N1_5_P2_4,N1_5_P2_0 3 1 2 linear None False True False False False CNOT2_5_10 True 'All_Data_Processed_New/1/1_3_1_2' 'Two-step Scheme: $\eta = 0.5$'
+python3 readData/plotFile.py N1_5_P2_1,N1_5_P2_2,N1_5_P2_3,N1_5_P2_4,N1_5_P2_0 3 2 2 linear None False True False False False CNOT2_5_100 True 'All_Data_Processed_New/1/1_3_2_2' 'Two-step Scheme: $\eta = 0.5$'
+python3 readData/plotFile.py N1_5_P2_1,N1_5_P2_2,N1_5_P2_3,N1_5_P2_4,N1_5_P2_0 3 3 2 linear None False True False False False CNOT2_5_1000 True 'All_Data_Processed_New/1/1_3_3_2' 'Two-step Scheme: $\eta = 0.5$'
+
+python3 readData/plotFile.py N1_4_P2_1,N1_4_P2_2,N1_4_P2_3,N1_4_P2_4,N1_4_P2_0 3 1 2 linear None False True False False False CNOT2_4_10 True 'All_Data_Processed_New/1/1_3_1_2' 'Two-step Scheme: $\eta = 0.5$'
+python3 readData/plotFile.py N1_4_P2_1,N1_4_P2_2,N1_4_P2_3,N1_4_P2_4,N1_4_P2_0 3 2 2 linear None False True False False False CNOT2_4_100 True 'All_Data_Processed_New/1/1_3_2_2' 'Two-step Scheme: $\eta = 0.5$'
+python3 readData/plotFile.py N1_4_P2_1,N1_4_P2_2,N1_4_P2_3,N1_4_P2_4,N1_4_P2_0 3 3 2 linear None False True False False False CNOT2_4_1000 True 'All_Data_Processed_New/1/1_3_3_2' 'Two-step Scheme: $\eta = 0.5$'
+
+python3 readData/plotFile.py N1_3_P2_1,N1_3_P2_2,N1_3_P2_3,N1_3_P2_4,N1_3_P2_0 3 1 2 linear None False True False False False CNOT2_3_10 True 'All_Data_Processed_New/1/1_3_1_2' 'Two-step Scheme: $\eta = 0.5$'
+python3 readData/plotFile.py N1_3_P2_1,N1_3_P2_2,N1_3_P2_3,N1_3_P2_4,N1_3_P2_0 3 2 2 linear None False True False False False CNOT2_3_100 True 'All_Data_Processed_New/1/1_3_2_2' 'Two-step Scheme: $\eta = 0.5$'
+python3 readData/plotFile.py N1_3_P2_1,N1_3_P2_2,N1_3_P2_3,N1_3_P2_4,N1_3_P2_0 3 3 2 linear None False True False False False CNOT2_3_1000 True 'All_Data_Processed_New/1/1_3_3_2' 'Two-step Scheme: $\eta = 0.5$'
+
+
+Figure 21 - Fidelities Repeater Smart scheme with CNOT error at 0.01%:
+
+python3 readData/plotFile.py N1_6_P2_1,N1_6_P2_2,N1_6_P2_3,N1_6_P2_4,N1_6_P2_0 3 1 3 linear None False True False False False CNOT3_6_10 True 'All_Data_Processed_New/1/1_3_1_3' 'Two-step Scheme: $\eta = 0.5$'
+python3 readData/plotFile.py N1_6_P2_1,N1_6_P2_2,N1_6_P2_3,N1_6_P2_4,N1_6_P2_0 3 2 3 linear None False True False False False CNOT3_6_100 True 'All_Data_Processed_New/1/1_3_2_3' 'Two-step Scheme: $\eta = 0.5$'
+python3 readData/plotFile.py N1_6_P2_1,N1_6_P2_2,N1_6_P2_3,N1_6_P2_4,N1_6_P2_0 3 3 3 linear None False True False False False CNOT3_6_1000 True 'All_Data_Processed_New/1/1_3_3_3' 'Two-step Scheme: $\eta = 0.5$'
+
+python3 readData/plotFile.py N1_5_P2_1,N1_5_P2_2,N1_5_P2_3,N1_5_P2_4,N1_5_P2_0 3 1 3 linear None False True False False False CNOT3_5_10 True 'All_Data_Processed_New/1/1_3_1_3' 'Two-step Scheme: $\eta = 0.5$'
+python3 readData/plotFile.py N1_5_P2_1,N1_5_P2_2,N1_5_P2_3,N1_5_P2_4,N1_5_P2_0 3 2 3 linear None False True False False False CNOT3_5_100 True 'All_Data_Processed_New/1/1_3_2_3' 'Two-step Scheme: $\eta = 0.5$'
+python3 readData/plotFile.py N1_5_P2_1,N1_5_P2_2,N1_5_P2_3,N1_5_P2_4,N1_5_P2_0 3 3 3 linear None False True False False False CNOT3_5_1000 True 'All_Data_Processed_New/1/1_3_3_3' 'Two-step Scheme: $\eta = 0.5$'
+
+python3 readData/plotFile.py N1_4_P2_1,N1_4_P2_2,N1_4_P2_3,N1_4_P2_4,N1_4_P2_0 3 1 3 linear None False True False False False CNOT3_4_10 True 'All_Data_Processed_New/1/1_3_1_3' 'Two-step Scheme: $\eta = 0.5$'
+python3 readData/plotFile.py N1_4_P2_1,N1_4_P2_2,N1_4_P2_3,N1_4_P2_4,N1_4_P2_0 3 2 3 linear None False True False False False CNOT3_4_100 True 'All_Data_Processed_New/1/1_3_2_3' 'Two-step Scheme: $\eta = 0.5$'
+python3 readData/plotFile.py N1_4_P2_1,N1_4_P2_2,N1_4_P2_3,N1_4_P2_4,N1_4_P2_0 3 3 3 linear None False True False False False CNOT3_4_1000 True 'All_Data_Processed_New/1/1_3_3_3' 'Two-step Scheme: $\eta = 0.5$'
+
+python3 readData/plotFile.py N1_3_P2_1,N1_3_P2_2,N1_3_P2_3,N1_3_P2_4,N1_3_P2_0 3 1 3 linear None False True False False False CNOT3_3_10 True 'All_Data_Processed_New/1/1_3_1_3' 'Two-step Scheme: $\eta = 0.5$'
+python3 readData/plotFile.py N1_3_P2_1,N1_3_P2_2,N1_3_P2_3,N1_3_P2_4,N1_3_P2_0 3 2 3 linear None False True False False False CNOT3_3_100 True 'All_Data_Processed_New/1/1_3_2_3' 'Two-step Scheme: $\eta = 0.5$'
+python3 readData/plotFile.py N1_3_P2_1,N1_3_P2_2,N1_3_P2_3,N1_3_P2_4,N1_3_P2_0 3 3 3 linear None False True False False False CNOT3_3_1000 True 'All_Data_Processed_New/1/1_3_3_3' 'Two-step Scheme: $\eta = 0.5$'
+
+
+
+Others:
+
+python3 readData/plotFile.py N1_5_P2_1,N1_5_P2_2,N1_5_P2_3,N1_5_P2_4,N1_5_P2_0,N1_6_P2_1,N1_6_P2_2,N1_6_P2_3,N1_6_P2_4,N1_6_P2_0 3 3 2 logit None False True False False False Dephasing_Damping_CNOT_Repeater False None
+python3 readData/plotFile.py N1_5_P2_1,N1_5_P2_2,N1_5_P2_3,N1_5_P2_4,N1_5_P2_0 3 3 3 logit None False True False False False Dephasing_Damping_CNOT_Repeater False None
+
+python3 readData/plotFile.py N1_2_P2_1,N1_2_P2_2,N1_2_P2_3,N1_2_P2_4,N1_2_P2_0 3 1 3 logit '$P_d = 25\%$, $T_{2}$ = 10 ms' False True F
+python3 readData/plotFile.py N1_2_P2_1,N1_2_P2_2,N1_2_P2_3,N1_2_P2_4,N1_2_P2_0 3 2 3 logit '$P_d = 25\%$, $T_{2}$ = 100 ms' False True F
+python3 readData/plotFile.py N1_2_P2_1,N1_2_P2_2,N1_2_P2_3,N1_2_P2_4,N1_2_P2_0 3 3 3 logit '$P_d = 25\%$, $T_{2}$ = 1 s' False True F
+
+python3 readData/plotFile.py N1_5_P2_1,N1_5_P2_2,N1_5_P2_3,N1_5_P2_4,N1_5_P2_0 3 1 1 logit '$P_d = 3.1\%$, $T_{2}$ = 10 ms' False True True '../Simulations/All_Data_Processed/2/2_2_1_3' 'Two-Step Scheme - $T_{2}$ = 200 ms | $T_{2}$ = 100 ms | $\epsilon_{CNOT} = 10^{-4}$'
+
+python3 readData/plotFile.py N1_5_P2_1,N1_5_P2_2,N1_5_P2_3,N1_5_P2_4,N1_5_P2_0 3 2 1 linear '$P_d = 3.1\%$, $T_{2}$ = 100 ms' False True True '../Simulations/All_Data_Processed/2/2_2_2_3' 'Two-Step Scheme - $T_{2}$ = 200 ms | $T_{2}$ = 100 ms | $\epsilon_{CNOT} = 10^{-4}$'
+
+python3 readData/plotFile.py N1_5_P2_1,N1_5_P2_2,N1_5_P2_3,N1_5_P2_4,N1_5_P2_0 3 3 1 linear '$P_d = 3.1\%$, $T_{2}$ = 1 s' False True True '../Simulations/All_Data_Processed/2/2_2_2_3' 'Two-Step Scheme - $T_{2}$ = 200 ms | $T_{2}$ = 100 ms | $\epsilon_{CNOT} = 10^{-4}$'
+
+
+python3 readData/plotFile.py N1_2_P2_1,N1_3_P2_1,N1_4_P2_1,N1_5_P2_1 3 3 3 logit '$\eta$ = 0.5 , $\epsilon_{CNOT} = 10^{-4}$' True False False
+python3 readData/plotFile.py N1_2_P2_1,N1_3_P2_1,N1_4_P2_1,N1_5_P2_1 3 2 3 logit '$\eta$ = 0.5, $\epsilon_{CNOT} = 10^{-4}$' True False False
+python3 readData/plotFile.py N1_2_P2_1,N1_3_P2_1,N1_4_P2_1,N1_5_P2_1 3 1 3 logit '$\eta$ = 0.5, $\epsilon_{CNOT} = 10^{-4}$' True False False
+
+python3 readData/plotFile.py N1_2_P2_1,N1_3_P2_1,N1_4_P2_1,N1_5_P2_1 3 3 2 logit '$\eta$ = 0.5, $\epsilon_{CNOT} = 10^{-3}$' True False False
+python3 readData/plotFile.py N1_2_P2_1,N1_3_P2_1,N1_4_P2_1,N1_5_P2_1 3 2 2 logit '$\eta$ = 0.5, $\epsilon_{CNOT} = 10^{-3}$' True False False
+python3 readData/plotFile.py N1_2_P2_1,N1_3_P2_1,N1_4_P2_1,N1_5_P2_1 3 1 2 logit '$\eta$ = 0.5, $\epsilon_{CNOT} = 10^{-3}$' True False False
+
+python3 readData/plotFile.py N1_2_P2_1,N1_3_P2_1,N1_4_P2_1,N1_5_P2_1 3 3 1 logit '$\eta$ = 0.5, $\epsilon_{CNOT} = 10^{-2}$' True False False
+python3 readData/plotFile.py N1_2_P2_1,N1_3_P2_1,N1_4_P2_1,N1_5_P2_1 3 2 1 logit '$\eta$ = 0.5, $\epsilon_{CNOT} = 10^{-2}$' True False False
+python3 readData/plotFile.py N1_2_P2_1,N1_3_P2_1,N1_4_P2_1,N1_5_P2_1 3 1 1 logit '$\eta$ = 0.5, $\epsilon_{CNOT} = 10^{-2}$' True False False
+
+python3 readData/plotFile.py N1_2_P2_0,N1_3_P2_0,N1_4_P2_0,N1_5_P2_0 0 0 1 linear '$\eta$ = 0.5, $\epsilon_{CNOT} = 10^{-2}$' True False False
+
+
+
+

@@ -1,0 +1,40 @@
+python3 qRAM_twostep_test.py 5 0 0_0_0
+wait
+python3 qRAM_twostep_test.py 5 0 0_0_0
+wait
+python3 qRAM_twostep_test.py 5 0 0_0_0
+wait
+python3 qRAM_twostep_test.py 5 0 0_0_0
+wait
+python3 qRAM_twostep_test.py 5 0 0_0_0
+wait
+python3 qRAM_twostep_test.py 5 0 0_0_0
+wait
+python3 qRAM_twostep_test.py 5 0 0_0_0
+wait
+python3 qRAM_twostep_test.py 5 0 0_0_0
+wait
+python3 qRAM_twostep_test.py 5 0 0_0_0
+wait
+python3 qRAM_twostep_test.py 5 0 0_0_0
+wait
+python3 qRAM_twostep_test.py 5 0 0_0_0
+wait
+python3 qRAM_twostep_test.py 5 0 0_0_0
+wait
+python3 qRAM_twostep_test.py 5 0 0_0_0
+wait
+python3 qRAM_twostep_test.py 5 0 0_0_0
+wait
+python3 qRAM_twostep_test.py 5 0 0_0_0
+wait
+python3 qRAM_twostep_test.py 5 0 0_0_0
+wait
+python3 qRAM_twostep_test.py 5 0 0_0_0
+wait
+python3 qRAM_twostep_test.py 5 0 0_0_0
+wait
+python3 qRAM_twostep_test.py 5 0 0_0_0
+wait
+python3 qRAM_twostep_test.py 5 0 0_0_0
+wait
