@@ -14,3 +14,8 @@ Within both folders, the structure is identical:
 - folder /readData with the .py files to treat and plot the data
 - folder /Plots with the plots presented in the paper
 - folder /Data_Raw and /Data_Processed with the direct data from simulations and after doing the calculations of the fidelity respectively
+- README document with additional information about the data structure
+
+
+
+(Keep in mind this might not be the most efficient setup of data...)
