@@ -1,4 +1,4 @@
-# HeraldedQRAM
+# Heralded QRAM
 
 This repository simulates different types of architectures for a QRAM, based on initial works developed by Chen _et.al_ [1] ([10.1103/PRXQuantum.2.030319](https://www.doi.org/10.1103/PRXQuantum.2.030319)) and new ones introduced as a part of a recent work developed by Bugalho _et.al_ [2] ([arXiv:2210.13494](https://arxiv.org/abs/2210.13494))
 
